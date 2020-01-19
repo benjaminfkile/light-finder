@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-//import { render } from 'react-dom'
 import Nav from './Nav/Nav'
 import Map from './Map/Map'
 import { mapStyles } from './Map/NightMode.js'
 import Snow from './Snow/Snow'
 import './App.css'
-//fix git
 
 class App extends Component {
 
@@ -35,14 +33,12 @@ class App extends Component {
       .then(data => {
         this.setState({ lights: data })
       })
-      .catch(error => alert('oops'));
-
+      .catch(error => alert('Sorry the service is down \n:(\nPlease try again later'));
   }
 
   hidePictureBox = () => {
     this.setState({ showPictureBox: false })
   }
-
 
   render() {
 
@@ -121,7 +117,5 @@ class App extends Component {
     );
   }
 }
-
-//render(<App />, document.getElementById('root'));
 
 export default App;

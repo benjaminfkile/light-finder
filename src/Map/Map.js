@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "./Map.css";
 
 class Map extends Component {
   constructor(props) {
@@ -18,8 +17,8 @@ class Map extends Component {
     if (!window.google) {
       var s = document.createElement('script');
       s.type = 'text/javascript';
-      s.src = `https://maps.google.com/maps/api/js?key=AIzaSyAj6zqW55nq95JI6gGGj-BtkN_hfZhJScM`;
-      // s.src = `https://maps.google.com/maps/api/js`;
+      // s.src = `https://maps.google.com/maps/api/js?key=AIzaSyAj6zqW55nq95JI6gGGj-BtkN_hfZhJScM`;
+      s.src = `https://maps.google.com/maps/api/js`;
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
       s.addEventListener('load', e => {
