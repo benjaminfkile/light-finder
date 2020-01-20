@@ -20,3 +20,5 @@ npm test
 
 # Screenshots
 
+![Screenshot from 2020-01-19 21-16-20](https://user-images.githubusercontent.com/34235864/72698338-0a2dc800-3b01-11ea-968b-126178af575e.png)
+
