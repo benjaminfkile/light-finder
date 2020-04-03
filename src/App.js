@@ -44,7 +44,7 @@ class App extends Component {
 
     return (
 
-      <div className="App_Container">
+      <div className="App_Container" >
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Mountains+of+Christmas" />
 
         <Nav

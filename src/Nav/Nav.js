@@ -51,10 +51,10 @@ class Nav extends Component {
                 return (
                     this.state.showLandingContainer && <div className="Landing_Container">
                         <img src="./res/hat.png" alt="A Hat" height="100vh" width="100vw"></img>
-                        <h1>Powered by Google Maps</h1>
+                        {/* <h1>Powered by Google Maps</h1>
                         <br></br>
                         <h2>...and Pizza Guys</h2>
-                        <br></br>
+                        <br></br> */}
                         <h3>Click on a marker to get directions to christmas lights</h3>
                         {/* <button onClick={this.hideLanding}>landing</button> */}
                         <br></br>
