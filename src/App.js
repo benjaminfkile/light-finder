@@ -78,7 +78,7 @@ class App extends Component {
                 center: { lat: this.state.centerLat, lng: this.state.centerLng },
                 zoom: 13,
                 fullscreenControl: false,
-                zoomControl: true,
+                zoomControl: false,
                 streetViewControl: false,
                 mapTypeControl: false,
                 styles: mapStyles
