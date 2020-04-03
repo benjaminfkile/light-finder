@@ -111,9 +111,11 @@
         margin-bottom: -15px;
     }
     #Close_Landing_Btn{
-        margin-top: 10px;
-        margin-left: 37%;
+        /* margin-top: 10px;
+        margin-left: 37%; */
         position:absolute;
+        left: 0vw;
+        top: 0vh;
         border-radius:20px;
         border-color: 0,0,0,0;
         background-color: rgb(182,48,48);

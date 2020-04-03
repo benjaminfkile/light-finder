@@ -11,13 +11,9 @@ class Nav extends Component {
         }
     }
 
-    hideLanding = () => {
-        this.setState({ showLandingContainer: false });
-    }
+    hideLanding = (args) => {
 
-    launchNavigation = () => {
-        //window.open(args)
-        console.log('click');
+        this.setState({ showLandingContainer: false });
     }
 
     render() {
@@ -49,17 +45,15 @@ class Nav extends Component {
         } else {
             if (!this.props.targetLat) {
                 return (
-                    this.state.showLandingContainer && <div className="Landing_Container">
+                    this.state.showLandingContainer && <div className="Landing_Container" onClick={this.hideLanding}>
                         <img src="./res/hat.png" alt="A Hat" height="100vh" width="100vw"></img>
-                        {/* <h1>Powered by Google Maps</h1>
+                        <h1>Powered by Google Maps</h1>
                         <br></br>
                         <h2>...and Pizza Guys</h2>
-                        <br></br> */}
-                        <h3>Click on a marker to get directions to christmas lights</h3>
-                        {/* <button onClick={this.hideLanding}>landing</button> */}
                         <br></br>
-                        <input onClick={this.hideLanding} type="image" id="Close_Landing_Btn" alt="Login"
-                            src="./res/close.png"></input>
+                        <h3>Click on a marker to get directions to Christmas Lights</h3>
+                        <br></br>
+                        {/* <input onClick={this.hideLanding} type="image" id="Close_Landing_Btn" alt="Login" src="./res/close.png"></input> */}
 
                     </div>
                 )
