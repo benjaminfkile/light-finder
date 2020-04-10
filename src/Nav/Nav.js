@@ -11,8 +11,7 @@ class Nav extends Component {
         }
     }
 
-    hideLanding = (args) => {
-
+    hideLanding = () => {
         this.setState({ showLandingContainer: false });
     }
 
@@ -38,14 +37,13 @@ class Nav extends Component {
                     </li>
                     <a href={navLink} target="_blank" rel="noopener noreferrer"><img src="./res/navi-btn.png" alt="Directions" height={50} width={50} /> &nbsp;</a>
                     <br></br>
-                    <input onClick={this.props.hidePictureBox} type="image" id="Close_Nav_Btn" alt="Login"
-                        src="./res/close.png"></input>
+                    {/* <input onClick={this.props.hidePictureBox} type="image" id="Close_Nav_Btn" alt="Login" src="./res/close.png"></input> */}
                 </div>
             )
         } else {
             if (!this.props.targetLat) {
                 return (
-                    this.state.showLandingContainer && <div className="Landing_Container" onClick={this.hideLanding}>
+                    this.state.showLandingContainer && <div className="Landing_Container">
                         <img src="./res/hat.png" alt="A Hat" height="100vh" width="100vw"></img>
                         <h1>Powered by Google Maps</h1>
                         <br></br>
