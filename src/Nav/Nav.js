@@ -37,7 +37,8 @@ class Nav extends Component {
                     </li>
                     <a href={navLink} target="_blank" rel="noopener noreferrer"><img src="./res/navi-btn.png" alt="Directions" height={50} width={50} /> &nbsp;</a>
                     <br></br>
-                    {/* <input onClick={this.props.hidePictureBox} type="image" id="Close_Nav_Btn" alt="Login" src="./res/close.png"></input> */}
+                    <p id="Close_Nav_Btn" onClick={this.props.hidePictureBox}>X</p>
+
                 </div>
             )
         } else {
@@ -51,7 +52,8 @@ class Nav extends Component {
                         <br></br>
                         <h3>Click on a marker to get directions to Christmas Lights</h3>
                         <br></br>
-                        {/* <input onClick={this.hideLanding} type="image" id="Close_Landing_Btn" alt="Login" src="./res/close.png"></input> */}
+                        <p id="Close_Landing_Btn" onClick={this.hideLanding}>X</p>
+
 
                     </div>
                 )
