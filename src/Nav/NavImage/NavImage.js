@@ -13,8 +13,6 @@ class NavImage extends Component {
 
     render() {
 
-        console.log(this.state.loaded)
-
         return (
             <div className="Nav_Header">
                 <img src={this.props.lights.picture} onLoad={this.handleImageLoaded.bind(this)} alt='hacky' height={0} width={0}></img>
